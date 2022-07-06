@@ -1,3 +1,8 @@
+:root {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
 .content {
     display: flex;
 }
@@ -5,7 +10,7 @@
 /**********LEFT**********/
 
 .left {
-    width: 40vw;
+    width: 45vw;
     height: 100vh;
     background-image: url(images/jefferson-sees-vLSoYkrQnW0-unsplash.jpg);
     background-size: cover;
@@ -42,7 +47,7 @@
 /**********RIGHT**********/
 
 .right {
-    width: 60vw;
+    width: 55vw;
     height: 100vh;
     background-color: rgb(20, 20, 20);
 }
@@ -50,13 +55,14 @@
 /*TEXT*/
 
 .text {
-    background-color: rgb(32, 32, 8);
     color: white;
     height: 30vh;
     margin-top: 10vh;
     font-size: max(20px, 1.2vw);
     padding-left: 40px;
+    padding-right: 40px;
     line-height: 25px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .signup {
@@ -70,23 +76,70 @@
 
 /*FORMS*/
 
+form {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
 .forms {
-    background-color: blueviolet;
     height: 30vh;
     display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
+
 .input {
     width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    color: white;
+    background-color: rgb(20, 20, 20);
+    border: solid 2px rgb(100, 100, 100);
+}
+
+input:focus {
+    background-color: rgb(30, 30, 30);
+}
+
+label {
+    color: rgb(100, 100, 100);
+    font-size: 12px;
 }
 
 /*BUTTON*/
 
-.button {
-    background-color: brown;
-    height: 10vh;
+button {
+    color: rgb(255, 100, 120);
+    font-size: 12px;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0);
+    width: 20%;
+    height: 40px;
+    border: solid 4px;
+}
+
+button:hover {
+    background-color: rgb(100, 100, 100) ;
+}
+
+button:active {
+    background-color: rgb(180, 180, 180);
 }
 
 .login {
-    background-color: cadetblue;
-    height: 10vh;
+    color: white;
+    padding-left: 40px;
+}
+
+a {
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(255, 100, 120);
 }
